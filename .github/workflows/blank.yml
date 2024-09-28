@@ -2,7 +2,7 @@ name: CI/CD Pipeline with Chrome Job
 
 on:
   push:
-    branches: [main]
+    branches: [labs]
 
 jobs:
   build:
