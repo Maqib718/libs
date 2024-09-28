@@ -1,0 +1,52 @@
+name: CI/CD Pipeline with Chrome Job
+
+on:
+  push:
+    branches: [labs]
+
+env:
+  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: Install dependencies
+        run: npm install
+      - name: Build
+        run: npm run build
+      - name: Test
+        run: npm run test
+      - name: Lint code
+        run: npm run lint
+
+  chrome:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Chrome
+        uses: actions/setup-chrome@v2
+      - name: Run code in Chrome
+        run: |
+          node --inspect-brk ./path/to/your/script.js
+          # Replace ./path/to/your/script.js with the actual path to your script
+
+  deploy:
+    needs: [build, chrome]
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Deploy to production
+        run: aws s3 sync build/ dist/
+        
