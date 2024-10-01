@@ -21,3 +21,10 @@ Log.formatObject({name: "John", age: 30});
 Console Output:
 >>> {name: "John", age: 30}
 ```
+### Log.formatVar
+Formats a variable into a string representation, allowing for easy logging and debugging. This function takes a variable as input and returns a string that represents the variable's value.
+#### Tasks
+- Takes a variable as input and returns a string representation of its value
+- Supports multiple variable types (string, number, boolean, object, array)
+- Uses type-specific formatting (quotes for strings, brackets for objects)
+#### Usage
