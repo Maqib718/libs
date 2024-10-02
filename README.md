@@ -4,6 +4,7 @@ Log.js is a lightweight JavaScript logging library that provides a simple and cu
 - Functions
   - Log.formatObject
   - Log.formatVar
+  - Log.print
 ## Functions
 ### Log.formatObject
 ```Log.formatObject```
@@ -15,7 +16,8 @@ Formats an object into a string representation, making it easy to read and debug
 - Ignores non-enumerable properties
 #### Usage
 ```js
-Log.formatObject({name: "John", age: 30});
+const demo = Log.formatObject({name: "John", age: 30});
+console.log(demo);
 ```
 ```
 Console Output:
@@ -28,3 +30,11 @@ Formats a variable into a string representation, allowing for easy logging and d
 - Supports multiple variable types (string, number, boolean, object, array)
 - Uses type-specific formatting (quotes for strings, brackets for objects)
 #### Usage
+```js
+const demo = Log.formatVar("hello");
+console.log(demo);
+```
+```
+Console Output:
+>>> "hello"
+```
