@@ -101,7 +101,7 @@ Log.logInDiv();
 ## _How To Use_ Log.js
 **It's easy**
 1. Copy the code from [here](https://github/Mohammad-Aqib786/log-js/v1.0.0/Log.js)
-2. Create a ```<script>``` tag in your html before all the scripts (recommend in the head tag) and paste copied code in it.
+2. Create a **`js file`** & link it to  your html before all the scripts (recommend in the head tag) and paste copied code in it.
 ```html
 <!-- Or Copy this & Paste it before all the scripts-->
 <script>
@@ -126,4 +126,14 @@ Log {
 </script>
 <!-- Other script below it here -->
    ```
-3. **ENJOY!!**
+> **Recommend:** _use external js instead of inline.To use external js you may just copy the above code and remove the html tags._
+3. **Enjoy**
+--------------------
+
+
+
+
+
+
+
+
