@@ -15,4 +15,4 @@ Log {
 // print logs the formatted variable values & accepts infinite number of params
 // returns current time and acepts a string: 'date' which when passed to function returns date with time
 // logInDiv displays the console output in a div
-/// 2024-08-24 /// & /// OTHER VERSIONS COMING SOON ///
+/// 10-10-2024 /// & /// OTHER VERSIONS COMING SOON ///
