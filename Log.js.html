@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/base16/mocha.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <style>
+ html,body {
+ margin: 0;
+ padding: 10px;
+ scroll-behavior: smooth;
+ }
+ 
+ a {
+   color: #00F;
+   text-decoration: none;
+ }
+ 
+ object {
+ width: 100%;
+ /*position: sticky;
+ top: 0px;
+ left: 0px;
+ z-index: 100;*/
+ }
+ note {
+ display: block;
+ font-size: 1em;
+ margin: 0px;
+ margin-bottom: 10px;
+ font-family:Open Sans;
+ font-style:italic;
+ color: #555555;
+ padding:1em 1em 1em 50px;
+ border-left:8px solid #78C0A8;
+ line-height:1.6;
+ position: relative;
+ background:#EDEDED;
+ }
+ 
+ note::before{
+ font-family:Arial;
+ content: "*"/*"\201C"*/;
+ color: #78C0A8;
+ font-size:4em;
+ position: absolute;
+ left: 10px;
+ top:-10px;
+ }
+ code {
+ overflow-x: auto;
+ }
+ 
+ #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 60px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+  </style>
+</head>
+
+
+<body>
+  <a href="https://raw.githubusercontent.com/Mohammad-Aqib786/log-js/refs/heads/labs/v1.0.0/Log.js" download="v1.0.0/Log.js">
+    <object data="https://app.bsd.education/res/9f6c6ac2-2b05-49d1-95a2-736868422f13/LogJS.webp"></object>
+  </a>
+  <p id="intro">Log.js is a lightweight JavaScript logging library that provides a simple and customizable way to log variables, objects, and errors. It also includes a function to display log messages in a div element. This library is useful for debugging and testing purposes.</p>
+  <h2>Table Of Content</h2>
+  <ul>
+    <li><a href="#intro">Introduction</a></li>
+    <li><a href="#Functions">Functions</a>
+      <ul>
+        <li><a href="#formatObject">Log.formatObject</a></li>
+        <li><a href="#formatVar">Log.formatVar</a></li>
+        <li><a href="#print">Log.print</a></li>
+        <li><a href="#getCurrentTime">Log.getCurrentTime</a></li>
+        <li><a href="#logInDiv">Log logInDiv</a></li>
+      </ul>
+    </li>
+    <li>
+      <b>
+        <i><a href="#How-To-Use-LogJS"> How To Use </i> Log.js </a>
+      </b>
+    </li>
+  </ul>
+  <h2 id="Functions">Functions</h2>
+  <h3 id="formatObject">Log.formatObject</h3>
+  <p>
+    <code>Log.formatObject</code> Formats an object into a string representation, making it easy to read and debug. This function takes an object as input and returns a string that represents the object&#39;s properties and values.
+  </p>
+  <h4>Tasks</h4>
+  <ul>
+    <li>Takes an object as input and returns a string representation of its properties and values</li>
+    <li>Optional indent parameter adds spaces for nested objects</li>
+    <li>Supports nested objects and arrays</li>
+    <li>Ignores non-enumerable properties</li>
+  </ul>
+  <h4>Usage</h4>
+  <pre>
+		<code class="language-js">const demo = Log.formatObject({name: &quot;John&quot;, age: 30});
+console.log(demo);
+</code>
+	</pre>
+  <pre>
+		<code>Console Output:
+&gt;&gt;&gt; Object:
+     {
+        name: &quot;John&quot;
+        age: 30
+     }
+</code>
+	</pre>
+  <h3 id="formatVar">Log.formatVar</h3>
+  <p>Formats a variable into a string representation, allowing for easy logging and debugging. This function takes a variable as input and returns a string that represents the variable&#39;s value.</p>
+  <h4>Tasks</h4>
+  <ul>
+    <li>Takes a variable as input and returns a string representation of its value</li>
+    <li>Supports multiple variable types (string, number, boolean, object, array)</li>
+    <li>Uses type-specific formatting (quotes for strings, brackets for objects)</li>
+  </ul>
+  <h4>Usage</h4>
+  <pre>
+		<code class="language-js">const demo = Log.formatVar(&quot;hello&quot;);
+console.log(demo);
+</code>
+	</pre>
+  <pre>
+		<code>Console Output:
+&gt;&gt;&gt; &quot;hello&quot;
+</code>
+	</pre>
+  <h3 id="print">Log.print</h3>
+  <p>Logs one or more variables to the console, making it easy to debug and test code. This function takes one or more variables as input and logs them to the console.</p>
+  <h4>Tasks</h4>
+  <ul>
+    <li>Logs one or more variables to the console</li>
+    <li>Supports multiple variable types (string, number, boolean, object, array)</li>
+    <li>Uses type-specific formatting (quotes for strings, padding for numbers)</li>
+  </ul>
+  <h4>Usage</h4>
+  <pre>
+		<code class="language-js">Log.print(&quot;hello&quot;, {name: &quot;John&quot;});
+/// No need of console.log
+</code>
+	</pre>
+  <pre>
+		<code>Console Output:
+&gt;&gt;&gt; &quot;hello&quot;
+&gt;&gt;&gt; Object:
+     {
+        name: &quot;John&quot;
+        age: 30
+     }
+</code>
+	</pre>
+  <note>
+    <strong>Note!:</strong>
+    <i>
+      <code>Log.print</code> does not requires <code>console.log</code> instead it is a replacement for <code>console.log</code>
+    </i>
+  </note>
+  <h3 id="getCurrentTime">Log.getCurrentTime</h3>
+  <p>Returns the current time or date with time, allowing for easy logging and debugging. This function takes an optional type parameter to specify the format.</p>
+  <h4>Tasks</h4>
+  <ul>
+    <li>Returns the current time or date with time</li>
+    <li>Optional type parameter specifies format (default: &#39;time&#39;, alternative: &#39;date&#39;)</li>
+    <li>Supports two formats (time, date &amp; time)</li>
+  </ul>
+  <h4>Usage</h4>
+  <pre>
+		<code class="language-js">const time = Log.getCurrentTime();
+const dateAndTime = Log.getCurrentTime(&#39;date&#39;);
+console.log(time,&#39;\n&#39;,dateAndTime);
+</code>
+	</pre>
+  <pre>
+		<code>Console Output:
+&gt;&gt;&gt; 00:00:00
+    12:12:2024 on 00:00:00
+</code>
+	</pre>
+  <note>
+    <strong>Note!:</strong>
+    <i>Time and date may vary</i>
+  </note>
+  <h3 id="logInDiv">Log.logInDiv</h3>
+  <p>Displays console output in a div element, making it easy to debug and test code. This function displays all logged messages in a div element on the page.</p>
+  <h4>Tasks</h4>
+  <ul>
+    <li>Displays console output in a div element</li>
+    <li>Supports multiple console methods (debug, info, warn, error)</li>
+    <li>Uses a customizable CSS style for the log div</li>
+  </ul>
+  <h4>Usage</h4>
+  <pre>
+		<code class="language-js">Log.logInDiv();
+/// Now all console messages will be shown in a div on the page
+</code>
+	</pre>
+  <h2 id="How-To-Use-LogJS">
+    <em>How To Use</em> Log.js
+  </h2>
+  <p>
+    <strong>It&#39;s easy</strong>
+  </p>
+  <cl>
+    <strong>Step1: </strong>Copy the code from <a href="https://github.com/Mohammad-Aqib786/log.js/blob/labs/v1.0.0/Log.js" target="_blank">here</a><br>
+    <strong>Step2: </strong>Create a <strong>
+        <code>js file</code>
+      </strong> &amp; link it to your html before all the scripts (recommend in the head tag) and paste copied code in it.
+    <pre>
+			<code class="language-html">&lt;!-- Or Copy this &amp; Paste it before all the scripts--&gt;
+&lt;script&gt;
+// Log.js /v1.0.0 CODE:)
+  const Log=new Object;Log.formatObject=(n,e=1)=&gt;{let o=&quot;&quot;;const t=&quot;   &quot;.repeat(e);if(&quot;object&quot;==typeof n&amp;&amp;null!==n){o+=`${t}{`;for(const r in n)n.hasOwnProperty(r)&amp;&amp;(o+=`\n${t+&quot;    &quot;}${r}: ${Log.formatObject(n[r],e+1)}`);o+=`\n${t}}`}else o=&quot;string&quot;==typeof n?`${JSON.stringify(n)}`:&quot;number&quot;==typeof n||&quot;boolean&quot;==typeof n?`${n}`:&quot;function&quot;==typeof n?&quot;function&quot;:void 0===n?&quot;undefined&quot;:null===n?&quot;null&quot;:&quot;Anonymous type - &quot;+typeof n,o+=`${t}`;return o},Log.formatVar=n=&gt;{if(&quot;object&quot;==typeof n&amp;&amp;null!==n){return`Object\n${Log.formatObject(n)}`}return&quot;string&quot;==typeof n?JSON.stringify(n):&quot;number&quot;==typeof n||&quot;boolean&quot;==typeof n?n:&quot;function&quot;==typeof n?`ƒ(${n.name||&quot; [anonymous function] &quot;}):\n\n${n||&quot;function () { [undefined code] }&quot;}`:null==n?typeof n:(console.error(&quot;Unsupported type: &quot;+typeof n),&quot;Unsupported type: &quot;+typeof n)},Log.print=(...n)=&gt;{n.forEach((n=&gt;{let e=Log.formatVar(n);console.log(e)}))},Log.getCurrentTime=n=&gt;{const e=new Date,o=e.getHours().toString(),t=e.getMinutes().toString(),r=e.getSeconds().toString(),c=e.getFullYear(),l=e.getMonth(),i=e.getDate();let u=o,d=t,s=r,a=l,p=i;if(o.length&lt;2&amp;&amp;(u=&quot;0&quot;+o),t.length&lt;2&amp;&amp;(d=&quot;0&quot;+t),r.length&lt;2&amp;&amp;(s=&quot;0&quot;+r),l.length&lt;2&amp;&amp;(a=&quot;0&quot;+l),i.length&lt;2&amp;&amp;(p=&quot;0&quot;+i),&quot;date&quot;===n){return`${c}-${a}-${p} on ${u}:${d}:${s}`}return`${u}:${d}:${s}`},Log.logInDiv=()=&gt;{let n={console:0,error:0,warning:0,other:0,total:0};const e=document.createElement(&quot;div&quot;);e.id=&quot;debugDiv&quot;;const o=document.createElement(&quot;p&quot;);o.classList.add(&quot;summary&quot;),o.textContent=&quot;MESSAGE: 0 &quot;;const t=document.createElement(&quot;span&quot;);function r(e,o){const t=document.getElementById(&quot;debugDiv&quot;),r=document.createElement(&quot;p&quot;);r.classList.add(e);const c=document.createElement(&quot;hr&quot;);return t.appendChild(c),r.textContent=o,n.total+=1,n.other=n.total-(n.console+n.error+n.warning)-1,r}function c(){document.querySelector(&quot;#debugDiv p.summary&quot;).textContent=`MESSAGE: ${n.total} (CONSOLE: ${n.console}, JS EROR: ${n.error}, WARNING: ${n.warning}, OTHER: ${n.other})`}t.textContent=&quot;(CONSOLE: 0, JS ERROR: 0, WARNING: 0)&quot;,o.appendChild(t),e.appendChild(o),document.body.appendChild(e),window.addEventListener(&quot;error&quot;,(function(e){if(e.error){const o=`🚫 JS EROR: ${e.message}`,t=Log.getCurrentTime(),l=e.filename||&quot;unknown script&quot;,i=e.lineno||&quot;unknown line&quot;,u=e.colno||&quot;unknown column&quot;,d=r(&quot;error&quot;,`${o}\n`),s=function(n,e){const o=document.createElement(&quot;a&quot;);return o.href=n,o.innerText=e,o.style.color=&quot;red&quot;,o}(`${l}#${i}:${u}`,`// ${t} at ${l}:${i}:${u}`);d.appendChild(s),document.querySelector(&quot;#debugDiv&quot;).appendChild(d),n.error++,c()}}));const l=console.error;console.error=function(){const e=r(&quot;error&quot;,` ${[].join.call(arguments,&quot; &quot;)}`);document.querySelector(&quot;#debugDiv&quot;).appendChild(e),n.error++,c(),l.apply(console,arguments)};const i=console.log;console.log=function(){const e=r(&quot;console&quot;,` ${[].join.call(arguments,&quot; &quot;)}`);document.querySelector(&quot;#debugDiv&quot;).appendChild(e),n.console++,c(),i.apply(console,arguments)};const u=console.warn;console.warn=function(){const e=r(&quot;warning&quot;,` ${[].join.call(arguments,&quot; &quot;)}`);document.querySelector(&quot;#debugDiv&quot;).appendChild(e),n.warning++,c(),u.apply(console,arguments)};const d=console.info;console.info=function(){const n=r(&quot;info&quot;,` ${[].join.call(arguments,&quot; &quot;)}`);document.querySelector(&quot;#debugDiv&quot;).appendChild(n),c(),d.apply(console,arguments)};const s=console.debug;console.debug=function(){const n=r(&quot;debug&quot;,` ${[].join.call(arguments,&quot; &quot;)}`);document.querySelector(&quot;#debugDiv&quot;).appendChild(n),c(),s.apply(console,arguments)};!function(n){const e=document.createElement(&quot;style&quot;);e.textContent=n,document.head.appendChild(e)}(&quot;#debugDiv{font-family:monospace;background-color:#000;padding:20px;overflow: hidden;line-height:20px;user-select:text;color:#FFFFFF;}#debugDiv hr{border-top:1px solid grey;}#debugDiv p{margin:0;white-space:pre;overflow-x:scroll;}#debugDiv p.summary{font-weight:bolder;color:#00DDFF;}.console,.info{color:#FFFFFF;.warning{color:#FFFF00;}.error{color:#FF0000;}.debug{color:grey;}&quot;)},console.log(`Log.js loaded successfully!!\non ${Log.getCurrentTime()}\nat your document (${document.location.href}) &amp; happy coding!!`);
+// CODE END:)&lt;URL: https://codefile.io/f/yWYgEtmsKB /&gt;
+/*
+Log {
+       formatObject: function
+       formatVar: function
+       print: function
+       getCurrentTime: function
+       logInDiv: function
+    }
+*/
+// formatObject returns a string representation of an object
+// formatVar returns a string representation of a variable
+// print logs the formatted variable values &amp; accepts infinite number of params
+// returns current time and acepts a string: &#39;date&#39; which when passed to function returns date with time
+// logInDiv displays the console output in a div
+/// 10-10-2024 /// &amp; /// OTHER VERSIONS COMING SOON ///
+&lt;/script&gt;
+&lt;!-- Other script below it here --&gt;
+</code>
+		</pre>
+    <note>
+      <strong>Recommend:</strong>
+      <i>use external js instead of inline.To use external js you may just copy the above code and remove the html tags.</i>
+    </note>
+    <strong>Step3: </strong>Enjoy Using <code class="language-js">Log.js</code>
+  </cl>
+  
+  <button onclick="topFunction()" id="myBtn" title="Go to top">T&#9650;p</button>
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>
