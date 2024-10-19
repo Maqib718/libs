@@ -1,0 +1,11 @@
+{
+  "name": "Log.js",
+  "version": "v1.0.0",
+  "description": "Server app that uses the ORGANIZATION_NAME/PACKAGE_NAME package",
+  "main": "index.js",
+  "author": "Mohammad Aqib",
+  "license": "",
+  "dependencies": {
+    
+  }
+}
