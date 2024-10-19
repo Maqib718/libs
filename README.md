@@ -6,6 +6,7 @@
 Log.js is a lightweight, flexible JavaScript logging library that provides an efficient way to format, display, and manage log messages. Designed with simplicity and readability in mind, Log.js enhances debugging and development processes by offering a customizable logging experience.
 
 ## Key Features
+- **Zero Dependencies:** No external libraries needed.
 - **Versatile Formatting:** Easily format objects, variables, and custom messages with built-in functions.
 
 - **Real-Time Logging:** Display log messages directly in a dedicated div on your webpage, improving real-time debugging.
