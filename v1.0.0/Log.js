@@ -29,7 +29,7 @@ const Log=new Object;
  * @param {object} obj The object to format.
  * @returns {string} The formatted object as a string.
  **/
-Log.formatObject=(obj)=>{const format=(obj,level=1)=>{let str="";const indent="   ".repeat(level);if("object"==typeof obj&&null!==obj){str+=`${indent}{`;for(const key in obj)obj.hasOwnProperty(key)&&(str+=`\n${indent+"    "}${key}: ${format(obj[key],level+1)}`);str+=`\n${indent}}`}else str="string"==typeof obj?`"${obj}"`:"number"==typeof obj||"boolean"==typeof obj?`${obj}`:"function"==typeof obj?"function":void 0===obj?"undefined":null===obj?"null":`Anonymous type - ${typeof obj}`,str+=`${indent}`;return str};return format(obj)};
+Log.formatObj=(obj)=>{const format=(obj,level=1)=>{let str="";const indent="   ".repeat(level);if("object"==typeof obj&&null!==obj){str+=`${indent}{`;for(const key in obj)obj.hasOwnProperty(key)&&(str+=`\n${indent+"    "}${key}: ${format(obj[key],level+1)}`);str+=`\n${indent}}`}else str="string"==typeof obj?`"${obj}"`:"number"==typeof obj||"boolean"==typeof obj?`${obj}`:"function"==typeof obj?"function":void 0===obj?"undefined":null===obj?"null":`Anonymous type - ${typeof obj}`,str+=`${indent}`;return str};return format(obj)};
 
 
 /**
