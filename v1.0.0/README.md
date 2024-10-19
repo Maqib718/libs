@@ -11,7 +11,7 @@ Log.js is a lightweight JavaScript logging library that provides a simple and cu
 - **_How To Use_ Log.js**
 ## Functions
 ### Log.formatObj
-```Log.formatObject```
+```Log.formatObj```
 Formats an object into a string representation, making it easy to read and debug. This function takes an object as input and returns a string that represents the object's properties and values.
 #### Tasks
 - Takes an object as input and returns a string representation of its properties and values
