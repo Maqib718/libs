@@ -1,7 +1,7 @@
 {
   "name": "Log.js",
   "version": "v1.0.0",
-  "description": "Server app that uses the ORGANIZATION_NAME/PACKAGE_NAME package",
+  "description": "Log.js is a lightweight, flexible JavaScript logging library that provides an efficient way to format, display, and manage log messages. Designed with simplicity and readability in mind, Log.js enhances debugging and development processes by offering a customizable logging experience.",
   "main": "index.js",
   "author": "Mohammad Aqib",
   "license": "",
