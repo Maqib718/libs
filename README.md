@@ -1,5 +1,5 @@
 <img src="https://upcdn.io/12a1z8q/raw/LogJS.webp">
-<a href="https://raw.githubusercontent.com/Mohammad-Aqib786/log-js/refs/heads/labs/v1.0.0/Log.js" download="v1.0.0/Log js">
+<a href="https://raw.githubusercontent.com/Mohammad-Aqib786/log-js/refs/heads/labs/v1.0.0/Log.js" download="Log js">
   <img src="https://img.shields.io/badge/Download-Log.js-3d84ff?logo=github"/>
 </a> 
 
