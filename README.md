@@ -35,7 +35,6 @@ Log.js is a lightweight, flexible JavaScript logging library that provides an ef
 
 ## Version Info
 **current version:** v1.0.0
-
 **other versions :**
 - v1.0.0
 - v1.1.0 , Coming soon...
