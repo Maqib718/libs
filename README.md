@@ -17,7 +17,7 @@ Log.js is a lightweight, flexible JavaScript logging library that provides an ef
 
 - **Human-Readable Logs:** Ensures log messages are clear and easy to understand, making debugging smoother.
 
-## Usage:
+## Usage
 
 <a href="LogJS.zip" download="LogJS.zip"><img src="https://img.shields.io/badge/Download-Log.js-3d84ff?logo=github"/></a>
 <a href="https://logjs.tiiny.site/Log.js"><img src="https://img.shields.io/badge/tiiny.host-Log.js-b64ad8?logo=github"/></a>
@@ -32,5 +32,13 @@ Log.js is a lightweight, flexible JavaScript logging library that provides an ef
 - Format and print logs with simple commands.
 
 - Display logs in a dedicated div for enhanced readability and debugging.
+
+## Version Info
+**current version:** v1.0.0
+
+**versions:**
+<select>
+  <option>v1.0.0</option>
+</select>
 
 Whether you’re working on a small project or a large-scale application, Log.js is your reliable companion for maintaining clean, efficient, and effective logging
