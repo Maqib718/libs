@@ -24,7 +24,7 @@ Log.js is a lightweight, flexible JavaScript logging library that provides an ef
 
 - Download `Log.js` in your project.
 
-- Or just simply copy:
+- Or just simply use cdn:
   ```html
   <script src="https://logjs.tiiny.site/Log.js" crossorigin="anonymous"></script>
   ```
