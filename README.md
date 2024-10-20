@@ -26,7 +26,7 @@ Log.js is a lightweight, flexible JavaScript logging library that provides an ef
 
 - Or just simply copy:
   ```html
-  <scro
+  <script src="https://logjs.tiiny.site/Log.js" crossorigin="anonymous"></script>
   ```
  
 - Format and print logs with simple commands.
