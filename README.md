@@ -34,7 +34,7 @@ Log.js is a lightweight, flexible JavaScript logging library that provides an ef
 - Display logs in a dedicated div for enhanced readability and debugging.
 
 ## Version Info
-**current version:** v1.0.0
+**current version:** v1.0.0 <br>
 **other versions :**
 - v1.0.0
 - v1.1.0 , Coming soon...
