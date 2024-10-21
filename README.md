@@ -1,4 +1,4 @@
-<img src="https://maqib-786.tiiny.site/libs/LogJS-logo.jpg">
+<img src="https://maqib-786.tiiny.site/uploads/LogJS-logo.jpg">
 <a href="LogJS.zip" download="LogJS.zip"><img src="https://img.shields.io/badge/Download-Log.js-3d84ff?logo=github"/></a>
 <a href="https://maqib-786.tiiny.site/libs/v1-0-0/Log.js"><img src="https://img.shields.io/badge/tiiny.host-Log.js-b64ad8?logo=github"/></a> 
 
