@@ -26,7 +26,7 @@ Log.js is a lightweight, flexible JavaScript logging library that provides an ef
 
 - Or just simply use cdn:
   ```html
-  <script src="[https://maqib-786.tiiny.site/libs/v1-0-0/Log.js](https://maqib-786.tiiny.site/uploads/libs/v1-0-0/Log.js)" crossorigin="anonymous"></script>
+  <script src="https://maqib-786.tiiny.site/libs/v1-0-0/Log.js" crossorigin="anonymous"></script>
   ```
  
 - Format and print logs with simple commands.
