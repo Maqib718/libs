@@ -1,5 +1,5 @@
 <img src="https://maqib718.tiiny.site/uploads/LogJS-logo.jpg">
-<a href="https://cdn.jsdelivr.net/gh/Mohammad-Aqib786/libs@1.0.0/Log.js"><img src="https://img.shields.io/badge/jsdelivr-Log.js-red?logo=jsdelivr"/></a>
+<a href="https://cdn.jsdelivr.net/gh/Mohammad-Aqib786/libs@1.0.0/Log.js"><img src="https://img.shields.io/badge/jsdelivr-Log.js-e74d3a?logo=jsdelivr"/></a>
 <a href="https://maqib718.tiiny.site/uploads/libs/v1-0-0/Log.js"><img src="https://img.shields.io/badge/tiiny.host-Log.js-b64ad8"/></a> 
 
 Log.js is a lightweight, flexible JavaScript logging library that provides an efficient way to format, display, and manage log messages. Designed with simplicity and readability in mind, Log.js enhances debugging and development processes by offering a customizable logging experience.
@@ -19,7 +19,7 @@ Log.js is a lightweight, flexible JavaScript logging library that provides an ef
 
 ## Usage
 
-<a href="https://cdn.jsdelivr.net/gh/Mohammad-Aqib786/libs@1.0.0/Log.js"><img src="https://img.shields.io/badge/jsdelivr-Log.js-red?logo=jsdelivr"/></a>
+<a href="https://cdn.jsdelivr.net/gh/Mohammad-Aqib786/libs@1.0.0/Log.js"><img src="https://img.shields.io/badge/jsdelivr-Log.js-e74d3a?logo=jsdelivr"/></a>
 <a href="https://maqib718.tiiny.site/uploads/libs/v1-0-0/Log.js"><img src="https://img.shields.io/badge/tiiny.host-Log.js-b64ad8"/></a>
 
 - Download `Log.js` in your project.
