@@ -1,14 +1,11 @@
 /**
- * __/\\\_______________________________________________________________________
- *  _\/\\\____________________________________________________/\\\_______________
- *   _\/\\\_____________________________/\\\\\\\\_____________\///________________
- *    _\/\\\_________________/\\\\\_____/\\\////\\\_____________/\\\___/\\\\\\\\\\_
- *     _\/\\\_______________/\\\///\\\__\//\\\\\\\\\____________\/\\\__\/\\\//////__
- *      _\/\\\______________/\\\__\//\\\__\///////\\\____________\/\\\__\/\\\\\\\\\\_
- *       _\/\\\_____________\//\\\__/\\\___/\\_____\\\________/\\_\/\\\__\////////\\\_
- *        _\/\\\\\\\\\\\\\\\__\///\\\\\/___\//\\\\\\\\___/\\\_\//\\\\\\____/\\\\\\\\\\_
- *         _\///////////////_____\/////______\////////___\///___\//////____\//////////__
- *
+ *   _                   _     
+ *  | |    ___   __ _   (_)___ 
+ *  | |   / _ \ / _` |  | / __|
+ *  | |__| (_) | (_| |_ | \__ \
+ *  |_____\___/ \__, (_)/ |___/
+ *              |___/ |__/     
+ * 
  * @filename     Log.js
  * @author       Mohammad Aqib
  * @version      1.0.0
@@ -29,7 +26,7 @@ const Log=new Object;
  * @param {object} obj The object to format.
  * @returns {string} The formatted object as a string.
  **/
-Log.formatObj=(obj)=>{const format=(obj,level=1)=>{let str="";const indent="   ".repeat(level);if("object"==typeof obj&&null!==obj){str+=`${indent}{`;for(const key in obj)obj.hasOwnProperty(key)&&(str+=`\n${indent+"    "}${key}: ${format(obj[key],level+1)}`);str+=`\n${indent}}`}else str="string"==typeof obj?`"${obj}"`:"number"==typeof obj||"boolean"==typeof obj?`${obj}`:"function"==typeof obj?"function":void 0===obj?"undefined":null===obj?"null":`Anonymous type - ${typeof obj}`,str+=`${indent}`;return str};return format(obj)};
+Log.formatObject=(obj)=>{const format=(obj,level=1)=>{let str="";const indent="   ".repeat(level);if("object"==typeof obj&&null!==obj){str+=`${indent}{`;for(const key in obj)obj.hasOwnProperty(key)&&(str+=`\n${indent+"    "}${key}: ${format(obj[key],level+1)}`);str+=`\n${indent}}`}else str="string"==typeof obj?`"${obj}"`:"number"==typeof obj||"boolean"==typeof obj?`${obj}`:"function"==typeof obj?"function":void 0===obj?"undefined":null===obj?"null":`Anonymous type - ${typeof obj}`,str+=`${indent}`;return str};return format(obj)};
 
 
 /**
@@ -37,7 +34,7 @@ Log.formatObj=(obj)=>{const format=(obj,level=1)=>{let str="";const indent="   "
  * @param {any} variable The variable to format.
  * @returns {string} The formatted variable as a string.
  **/
-Log.formatVar=variable=>"object"==typeof variable&&null!==variable?`Object\n${Log.formatObject(variable)}`:"string"==typeof variable?`"${variable}"`:"number"==typeof variable||"boolean"==typeof variable?`${variable}`:"function"==typeof variable?`ƒ(${variable.name||" [anonymous function] "}):\n\n${variable||"function () { [undefined code] }"}`:null==variable?"null":typeof variable;
+Log.formatVar=variable=>"object"==typeof variable&&null!==variable?`Object\n${Log.formatObject(variable)}`:"string"==typeof variable?`"${variable}"`:"number"==typeof variable||"boolean"==typeof variable?`${variable}`:"function"==typeof variable?`Æ’(${variable.name||" [anonymous function] "}):\n\n${variable||"function () { [undefined code] }"}`:null==variable?"null":typeof variable;
 
 
 /**
