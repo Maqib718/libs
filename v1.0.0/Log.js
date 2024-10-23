@@ -8,10 +8,9 @@
  * 
  * @filename     Log.js
  * @author       Mohammad Aqib
- * @version      1.0.0
- * @release_date 18-10-2024
+ * @version      v1.0.0
+ * @release_date 24-10-2024
  * @website      https://app.site123.com/?w=9799688&disableCache=4797005
- * @tutorial     https://logjs.tiiny.site
  
  * @description  Log.js is a lightweight JavaScript logging library that
                  provides a simple and customizable way to log variables,
@@ -84,8 +83,6 @@ console.log(` Log.js loaded successfully!!\n  on ${Log.getCurrentTime()}\n  at y
 
 /**@description important links:
  * @website   {@link https://app.site123.com/?w=9799688&disableCache=4797005 }
- * @tutorial  {@link https://logjs.tiiny.site }
- * @github    {@link https://github.com/Mohammad-Aqib786/logjs }
+ * @github    {@link https://github.com/Mohammad-Aqib786/libs }
  * @codefile  {@link https://codefile.io/f/yWYgEtmsKB }
- * @programiz {@link https://www.programiz.com/online-compiler/71UZik69YRie5 }
  **/
