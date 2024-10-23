@@ -83,7 +83,7 @@ Log.logInDiv=()=>{let logCount={console:0,error:0,warning:0,other:0,total:0};con
 console.log(` Log.js loaded successfully!!\n  on ${Log.getCurrentTime()}\n  at your document (${document.location.href}) & happy coding!!`)};
 
 /**@description important links:
- * @website   {@link none }
+ * @website   {@link https://app.site123.com/?w=9799688&disableCache=4797005 }
  * @tutorial  {@link https://logjs.tiiny.site }
  * @github    {@link https://github.com/Mohammad-Aqib786/logjs }
  * @codefile  {@link https://codefile.io/f/yWYgEtmsKB }
