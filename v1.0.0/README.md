@@ -106,9 +106,10 @@ Log.logInDiv();
 1. Copy the code from [here](https://github/Mohammad-Aqib786/log-js/v1.0.0/Log.js)
 2. Create a **`js file`** & link it to  your html before all the scripts (recommend in the head tag) and paste the copied code in your js file
 3. Or use cdn
-  ```
-   
-   ```
+```js
+<script src="https://cdn.jsdelivr.net/gh/Mohammad-Aqib786/libs@1.0.0/Log.js" crossorigin="anonymous" async="true"></script>
+```
+
 4. **Enjoy**
 
 
