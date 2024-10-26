@@ -1,6 +1,5 @@
 <img src="https://maqib718.tiiny.site/uploads/LogJS-logo.jpg"/>
 <a href="https://cdn.jsdelivr.net/gh/Mohammad-Aqib786/libs@1.0.0/Log.js"><img src="https://img.shields.io/badge/jsdelivr-Log.js-e74d3a?logo=jsdelivr" /></a>
-<a href="https://maqib718.tiiny.site/uploads/libs/v1-0-0/Log.js"><img src="https://img.shields.io/badge/tiiny.host-Log.js-b64ad8" /></a>
       
 Log.js is a lightweight JavaScript logging library that provides a simple and customizable way to log variables, objects, and errors. It also includes a function to display log messages in a div element. This library is useful for debugging and testing purposes.
 ## Table Of Content
