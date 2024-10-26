@@ -102,7 +102,7 @@ Log.logInDiv();
 ```
 ## _How To Use_ Log.js
 **It's easy**
-1. Copy the code from [here](https://github/Mohammad-Aqib786/log-js/v1.0.0/Log.js)
+1. Copy the code from [here](https://github.com/Mohammad-Aqib786/libs/blob/labs/v1.0.0/Log.js)
 2. Create a **`js file`** & link it to  your html before all the scripts (recommend in the head tag) and paste the copied code in your js file
 3. Or use cdn
 ```js
